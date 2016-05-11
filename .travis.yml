@@ -1,5 +1,5 @@
 language: ruby
 ruby:
-  - "2.3.0p0"
+  - "2.2.0"
 
 script: ruby test/testunitarios.rb
