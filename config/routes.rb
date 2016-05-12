@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'instagram#inicio'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+     post 'instagram/tag/buscar' => 'instagram#inicio'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
