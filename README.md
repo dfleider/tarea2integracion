@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dfleider/tarea2integracion.svg?branch=master)](https://travis-ci.org/dfleider/tarea2integracion)
 
+[![Coverage Status](https://coveralls.io/repos/dfleider/badges/badge.png?branch=master)](https://coveralls.io/r/dfleider/badges?branch=master)
 
-Please feel free to use a different markup language if you do not plan to run
+
 <tt>rake doc:app</tt>.
