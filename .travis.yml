@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.0.0-p247
-script: ruby test/controllers/instagram_controller_test.rb
+script: ruby test/testunitarios.rb
 
 deploy:
   api_key:
