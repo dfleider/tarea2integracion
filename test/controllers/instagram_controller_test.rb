@@ -1,7 +1,4 @@
 require 'test_helper'
-require 'coveralls'
-Coveralls.wear!
-
 
 class InstagramControllerTest < ActionController::TestCase
   test "should get inicio" do
