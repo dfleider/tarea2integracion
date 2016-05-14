@@ -9,5 +9,6 @@ class InstagramControllerTest < ActionController::TestCase
   test "falta de parametros" do
   	post :inicio
   	assert_response 400
+  end
 
 end
