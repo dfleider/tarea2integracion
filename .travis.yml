@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - 2.0.0-p247
 script: ruby test/testunitarios.rb
+#after_success: coveralls
 deploy:
   provider: heroku
   user: dfleiderman@gmail.com
