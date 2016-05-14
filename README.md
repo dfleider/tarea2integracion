@@ -1,8 +1,5 @@
-== README
+Tarea 2
 
 [![Build Status](https://travis-ci.org/dfleider/tarea2integracion.svg?branch=master)](https://travis-ci.org/dfleider/tarea2integracion)
 
-[![Coverage Status](https://coveralls.io/repos/dfleider/badges/badge.png?branch=master)](https://coveralls.io/r/dfleider/badges?branch=master)
-
-
-<tt>rake doc:app</tt>.
+[![Coverage Status](https://coveralls.io/repos/github/dfleider/tarea2integracion/badge.svg?branch=master)](https://coveralls.io/github/dfleider/tarea2integracion?branch=master)
