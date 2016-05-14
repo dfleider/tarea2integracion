@@ -4,6 +4,9 @@ skip_before_action :verify_authenticity_token
 require 'rest-client'
 require 'json'
 
+  def welcome
+  end
+
   def inicio
 
   	unless params[:tag] and params[:access_token]
@@ -67,7 +70,7 @@ require 'json'
 
     posts.push(post)
 	end
-  
+
 	urlVersion = busquedaVersion["object"]["url"].to_s
   commit = RestClient.get(urlVersion)
   commitJSON = JSON.parse commit
