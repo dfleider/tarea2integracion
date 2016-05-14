@@ -18,6 +18,9 @@ require 'json'
   	#	head 400
   	#	return
   	#end
+    versionMerge = RestClient.get 'https://api.github.com/repos/dfleider/tarea2integracion/git/refs/heads/master'
+    busquedaVersion = JSON.parse versionMerge
+
   	busqueda = RestClient.get 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token='+token
   	busquedaTotal = RestClient.get 'https://api.instagram.com/v1/tags/'+tag+'?access_token='+token
   	#https://api.instagram.com/oauth/authorize/?client_id=5fe4edf794844d62b62b81bbb07d6f0a&redirect_uri=http://tarea-deployment.herokuapp.com/&response_type=token&scope=public_content
@@ -64,8 +67,11 @@ require 'json'
 
     posts.push(post)
 	end
-
-	version = '2.0.1'
+  
+	urlVersion = busquedaVersion["object"]["url"].to_s
+  commit = RestClient.get(urlVersion)
+  commitJSON = JSON.parse commit
+  version =  commitJSON['message'].to_s
 
 	render json: {metadata: metadata, posts: posts, version: version}
 
