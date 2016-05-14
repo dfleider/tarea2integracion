@@ -1,7 +1,8 @@
 language: ruby
 rvm:
 - 2.0.0-p247
-script: ruby test/testunitarios.rb
+script: 
+- bundle exec rake
 after_success: coveralls
 deploy:
   provider: heroku
